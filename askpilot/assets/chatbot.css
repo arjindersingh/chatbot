@@ -1,0 +1,35 @@
+#bsc-widget { position: fixed; right: 24px; bottom: 24px; z-index: 99999; font: 15px/1.5 system-ui, -apple-system, sans-serif; color: #172033; text-align: left; }
+#bsc-widget * { box-sizing: border-box; }
+#bsc-widget button, #bsc-widget input { font: inherit; margin: 0; }
+#bsc-widget button { cursor: pointer; border: 0; text-transform: none; letter-spacing: normal; min-height: 44px; }
+#bsc-widget button:focus-visible, #bsc-widget input:focus-visible { outline: 3px solid #d97706; outline-offset: 3px; }
+#bsc-widget .bsc-launcher { display: block; margin-left: auto; padding: 13px 22px; border-radius: 28px; color: white; background: #2349ba; box-shadow: 0 6px 24px #17203333; font-weight: 600; }
+#bsc-widget .bsc-panel { display: flex; flex-direction: column; width: 360px; height: 480px; max-height: calc(100dvh - 110px); margin-bottom: 12px; overflow: hidden; border: 1px solid #dce2ee; border-radius: 18px; background: white; box-shadow: 0 12px 48px #17203333; }
+#bsc-widget [hidden] { display: none !important; }
+#bsc-widget .bsc-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px; background: #2349ba; color: white; }
+#bsc-widget .bsc-header strong { display: block; font-size: 17px; overflow-wrap: anywhere; }
+#bsc-widget .bsc-header span { display: block; font-size: 12px; }
+#bsc-widget .bsc-close { flex-shrink: 0; width: 44px; background: transparent; color: white; font-size: 26px; padding: 0; }
+#bsc-widget .bsc-messages { flex: 1; overflow-y: auto; padding: 16px; min-height: 0; background: #f8fafc; }
+#bsc-widget .bsc-message { width: fit-content; max-width: 90%; margin: 0 0 12px; padding: 10px 13px; border-radius: 12px; overflow-wrap: anywhere; white-space: pre-wrap; }
+#bsc-widget .bsc-bot { background: #e9eef7; color: #172033; }
+#bsc-widget .bsc-user { margin-left: auto; background: #2349ba; color: white; }
+#bsc-widget .bsc-status { margin: 0; padding: 0 14px; font-size: 12px; color: #4b5563; }
+#bsc-widget .bsc-status:not(:empty) { padding-top: 8px; }
+#bsc-widget .bsc-form { display: flex; gap: 8px; padding: 12px; border-top: 1px solid #e5e7eb; }
+#bsc-widget .bsc-form input { width: 100%; min-width: 0; min-height: 44px; border: 1px solid #cbd5e1; border-radius: 8px; padding: 10px; color: #172033; background: white; font-size: 16px; }
+#bsc-widget .bsc-form button { border-radius: 8px; padding: 10px 14px; background: #2349ba; color: white; }
+#bsc-widget button:disabled { opacity: .6; cursor: wait; }
+#bsc-widget .bsc-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 480px) { #bsc-widget { right: 12px; bottom: 12px; left: 12px; } #bsc-widget .bsc-panel { width: 100%; max-height: calc(100dvh - 100px); } }
+
+#bsc-widget .bsc-contact { padding: 20px; overflow-y: auto; flex: 1; min-height: 0; }
+#bsc-widget .bsc-contact h2 { margin: 0 0 8px; font: 600 20px/1.3 system-ui, sans-serif; color: #172033; }
+#bsc-widget .bsc-contact p { margin: 0 0 16px; }
+#bsc-widget .bsc-contact label { display: block; margin-bottom: 5px; font-weight: 600; }
+#bsc-widget .bsc-contact input { display: block; width: 100%; min-height: 44px; margin-bottom: 14px; border: 1px solid #cbd5e1; border-radius: 8px; padding: 10px; color: #172033; background: white; font-size: 16px; }
+#bsc-widget .bsc-contact button { width: 100%; border-radius: 8px; padding: 10px 14px; background: #2349ba; color: white; }
+
+#bsc-widget .bsc-questions { display: grid; gap: 8px; margin-bottom: 16px; }
+#bsc-widget .bsc-question { width: 100%; padding: 10px 13px; border: 1px solid #2349ba; border-radius: 10px; background: white; color: #2349ba; text-align: left; overflow-wrap: anywhere; }
+#bsc-widget .bsc-question:hover { background: #e9eef7; }
